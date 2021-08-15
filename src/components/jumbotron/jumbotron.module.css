@@ -1,0 +1,30 @@
+.jumbotron {
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.square {
+    background-color: #006466;
+    width: 100vw;
+    height: 10vh;
+    animation: leftToRightAnimation 5s infinite;
+    position: relative;
+    left: 200%;
+}
+.red{
+    background-color: red;
+}
+@keyframes leftToRightAnimation {
+    0% {
+        left: 200%;
+    }
+    50% {
+        left: 0%
+    }
+    100% {
+        left: 200%;
+    }
+}
