@@ -1,31 +1,26 @@
 import styled, { keyframes } from "styled-components";
-// const BackgroundChangingAnimation = keyframes` 
-//     from {
-//         background-color:red;
-//     }
-//     to{
-//         background-color:black;
-//         }
-// `
 
 const MovingAnimation = keyframes` 
-0% {
-        left: 0%;
+    0% {
+        left: 200%;
+        opacity:0%;
+    }
+    1% {
+        left: 200%;
+        opacity:100%;
     }
     100% {
-        left: 200%; 
+        left: 0%;
+        opacity:100%;
     }
 `
 
-export const Jumbotron = styled.div`
+export const Container = styled.div`
 width:100vw;
 height:100vh;
 align-items:center;
-position:absolute;
+position:relative;
 overflow:hidden;
-z-index:69;
-top:0;
-background-color:transparent;
 `
 
 export const Square = styled.div`
@@ -33,8 +28,10 @@ export const Square = styled.div`
     width: 100vw;
     height: 10vh;
     animation: ${MovingAnimation} 3s;
+    animation-timing-function:cubic-bezier(.04,.94,.51,1.01);
     position: relative;
     animation-fill-mode:forwards;
+    opacity:0%;
 `
 export const Square2 = styled(Square)`
 animation-delay:calc(0.2s);

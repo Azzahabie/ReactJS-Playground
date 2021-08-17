@@ -1,9 +1,10 @@
-import React, { useState } from 'react'
-import { Jumbotron, Square, Square2, Square3, Square4, Square5, Square6, Square7, Square8, Square9, Square10 } from './closingJumbo.elements';
+import React from 'react'
+import { Container, Square, Square2, Square3, Square4, Square5, Square6, Square7, Square8, Square9, Square10 } from './openingAnim.elements';
 
-const JumbotronThing = () => {
+const OpeningAnim = () => {
+
         return (
-            <Jumbotron>
+            <Container>
                 <Square></Square>
                 <Square2></Square2>
                 <Square3></Square3>
@@ -14,9 +15,11 @@ const JumbotronThing = () => {
                 <Square8></Square8>
                 <Square9></Square9>
                 <Square10></Square10>
-            </Jumbotron>
+            </Container>
         )
     
 }
 
-export default JumbotronThing
+
+
+export default OpeningAnim

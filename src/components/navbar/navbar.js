@@ -1,19 +1,17 @@
-import React from 'react'
+import {StyledNav,StyledLiFloatRight,StyledLi,StyledUL} from './navbar.elements'
 
-
-const navbar = () => {
+const Navbar = (props) => {
     return (
-        <nav>
-            <ul>
-                <li></li>
-                <div>
-                </div>
-            </ul>
-        </nav>
-        
-        
+        <StyledNav>
+            <StyledUL>
+                <StyledLi><h2>Logo</h2></StyledLi>
+                <StyledLiFloatRight><h3>OtherLOGO</h3></StyledLiFloatRight>
+                <input id="testInput" type="text"></input>
+                <button onClick={props.getUser}>test</button>
+            </StyledUL>
+        </StyledNav>
     )
 }
 
-export default navbar
+export default Navbar
 

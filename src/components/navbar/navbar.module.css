@@ -1,30 +1,18 @@
 
 
 nav {
-    background-color: rgb(199, 197, 197);
-    height: 8vh;
-    display: flex;
-    align-items: center;
+    
 }
 
 ul {
-    list-style-type: none;
-    height: 100%;
-    width: 100%;
-    padding: 0px;
+    
 }
 
 li{
-    float: left;
-    background-color: #d61a1a;
-    text-align: center;
-    height: 100%;
-    width: 100px;
-    text-decoration: none;
-    margin-left: 20px;
+    
 }
 
-.oddsOneOut{
+.oddOneOut{
     float: right;
     background-color: green;
     height: 100%;
