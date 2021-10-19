@@ -9,12 +9,12 @@ export const MainContainer = styled.div`
 
 `;
 export const LeftContainer = styled.div`
-  flex:0.6;
+  flex:0.7;
   height:${window.innerHeight};
   background-color:red;
 `;
 export const RightContainer = styled.div`
-  flex:0.4;
+  flex:0.3;
   height:${window.innerHeight};
   background-color:blue;
   display:flex;
