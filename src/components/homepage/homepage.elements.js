@@ -13,23 +13,34 @@ const moveSmallDivAnimation = keyframes`
 `;
 export const MainContainer = styled.div`
   width: 100%;
-  height: 100vh;
-  background-color: burlywood;
+  min-height: 100vh;
+  background-color: white;
   display:flex;
+
+  @media screen and (max-width: 992px) {
+    flex-direction:column;
+  }
 `;
 export const LeftContainer = styled.div`
   display:flex;
   flex:0.7;
   height:${window.innerHeight};
-  background-color:red;
+  //background-color:red;
+  justify-content:center;
+  align-items:center;
   /* animation:${moveDivAnimation} 4s;
   animation-fill-mode:forwards;
   animation-delay:2s; */
+  @media screen and (max-width: 992px) {
+    flex:0.4;
+    align-items:flex-end;
+    
+  }
 `;
 export const RightContainer = styled.div`
   flex:0.3;
   height:${window.innerHeight};
-  background-color:blue;
+  //background-color:blue;
   display:flex;
   flex-direction:column;
   justify-content:space-evenly;
@@ -37,5 +48,14 @@ export const RightContainer = styled.div`
   /* animation:${moveSmallDivAnimation} 4s linear;
   animation-fill-mode:forwards;
   animation-delay:8s */
+  @media screen and (max-width: 992px) {
+    flex-direction:row;
+    flex:0.4;
+    
+  }
+  @media screen and (max-width: 576px) {
+    flex-direction:column;
+    
+  }
 `;
 

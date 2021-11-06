@@ -1,0 +1,134 @@
+#svg {
+  width: 70%;
+}
+
+@media screen and (max-width: 576px) {
+   #svg{
+     width: 80%;
+   }
+}
+
+.cls-1,
+.cls-10,
+.cls-8 {
+  fill: #f2f2f2;
+}
+
+.cls-2,
+.cls-3 {
+  fill: #e6e6e6;
+}
+
+.cls-10,
+.cls-11,
+.cls-13,
+.cls-15,
+.cls-2,
+.cls-3,
+.cls-6,
+.cls-7 {
+  stroke: #000;
+}
+
+.cls-10,
+.cls-11,
+.cls-13,
+.cls-14,
+.cls-15,
+.cls-16,
+.cls-17,
+.cls-19,
+.cls-2,
+.cls-3,
+.cls-5,
+.cls-6,
+.cls-7,
+.cls-8 {
+  stroke-miterlimit: 10;
+}
+
+.cls-10,
+.cls-11,
+.cls-13,
+.cls-14,
+.cls-15,
+.cls-17,
+.cls-19,
+.cls-2,
+.cls-5,
+.cls-6,
+.cls-7 {
+  stroke-width: 0.25px;
+}
+
+.cls-3 {
+  stroke-width: 0.5px;
+}
+
+.cls-18,
+.cls-19,
+.cls-4,
+.cls-7 {
+  fill: #b3b3b3;
+}
+
+.cls-4 {
+  opacity: 0.64;
+}
+
+.cls-17,
+.cls-19,
+.cls-5 {
+  stroke: #4d4d4d;
+}
+
+.cls-5 {
+  fill: url(#linear-gradient);
+}
+
+.cls-16,
+.cls-8 {
+  stroke: #f2f2f2;
+  stroke-width: 0.47px;
+}
+
+.cls-9 {
+  clip-path: url(#clip-path);
+}
+
+.cls-11,
+.cls-16 {
+  fill: #999;
+}
+
+.cls-12 {
+  clip-path: url(#clip-path-2);
+}
+
+.cls-13,
+.cls-17 {
+  fill: none;
+}
+
+.cls-14,
+.cls-15 {
+  fill: #ccc;
+}
+
+.cls-14 {
+  stroke: #e6e6e6;
+}
+@keyframes reveal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+#Nose ,#Eye, #Lips{
+  animation: reveal 3s linear;
+  animation-delay: 1s;
+  opacity:0;
+  animation-fill-mode: forwards;
+}
