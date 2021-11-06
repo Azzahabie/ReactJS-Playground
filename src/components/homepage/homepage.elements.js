@@ -1,17 +1,30 @@
 //eslint-disable-next-line
 import styled, { keyframes } from "styled-components";
 
+const moveDivAnimation = keyframes`
+   0%{flex:0.9}
+   1%{flex:0.9}
+`;
+const moveSmallDivAnimation = keyframes`
+    0%{flex:0.1}
+    25%{flex:0.1;}
+    50%{flex:0.2;}
+    100%{flex:0.3;}
+`;
 export const MainContainer = styled.div`
   width: 100%;
   height: 100vh;
   background-color: burlywood;
-  display:flex
-
+  display:flex;
 `;
 export const LeftContainer = styled.div`
+  display:flex;
   flex:0.7;
   height:${window.innerHeight};
   background-color:red;
+  /* animation:${moveDivAnimation} 4s;
+  animation-fill-mode:forwards;
+  animation-delay:2s; */
 `;
 export const RightContainer = styled.div`
   flex:0.3;
@@ -21,5 +34,8 @@ export const RightContainer = styled.div`
   flex-direction:column;
   justify-content:space-evenly;
   align-items:center;
+  /* animation:${moveSmallDivAnimation} 4s linear;
+  animation-fill-mode:forwards;
+  animation-delay:8s */
 `;
 
