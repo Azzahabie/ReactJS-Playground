@@ -1,0 +1,13 @@
+#noti{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#bg{
+  width: 100vw;
+  height: 100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color: azure;
+}

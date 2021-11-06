@@ -1,6 +1,7 @@
-import React, { useEffect } from "react";
+import React, { Component } from "react";
 import {
-  Homepage
+  Homepage,
+  InProgress
 } from "./components";
 import {
   GlobalStyle,
@@ -8,18 +9,34 @@ import {
   GlobalMainContainer,
 } from "./globalStyles";
 
-function App() {
-  
-  useEffect(() => {    
+
+export default class App extends Component {
+  constructor(){
+    super()
+    this.state = {
+      readNotification : false
+    }
+  }
+  componentDidMount(){
     document.body.style.margin = 0
     document.body.style.padding = 0
-   });
-
-  return (
-    <Homepage>
-      
-    </Homepage>
-  );
+  }
+  test = () =>{
+    this.setState({readNotification:true})
+  }
+  render() {
+    return (
+      <>
+            {!this.state.readNotification ?
+            
+            <InProgress testFunc={this.test}>
+              
+            </InProgress>
+            
+            :  <Homepage> </Homepage>}
+    
+      </>
+    )
+  }
 }
 
-export default App;
