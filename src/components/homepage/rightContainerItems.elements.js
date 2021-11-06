@@ -1,5 +1,6 @@
 //eslint-disable-next-line
 import styled, { keyframes } from "styled-components";
+import { Link } from "react-router-dom";
 
 const fadeInAnimation = keyframes`
     0% { opacity: 0 }
@@ -7,6 +8,7 @@ const fadeInAnimation = keyframes`
     60% {  opacity: 0.7; }
     100% { opacity: 1 }
 `;
+
 export const Container_1 = styled.div`
     opacity:0;
     width:80%;
@@ -45,6 +47,20 @@ export const SubContainer_1 = styled.div`
     height:50%;
   }
 `;
+
+export const NavLink = styled(Link)`
+      color: black;
+      text-decoration: none;
+      &:hover {
+        color: black;
+      }
+      &:active{
+        color: black;
+      }
+      &:visited{
+        color: black;
+      }
+`
 
 export const SubContainer_2 = styled(SubContainer_1)``;
 
