@@ -11,16 +11,6 @@ const moveSmallDivAnimation = keyframes`
     50%{flex:0.2;}
     100%{flex:0.3;}
 `;
-export const MainContainer = styled.div`
-  width: 100%;
-  min-height: 100vh;
-  background-color: white;
-  display:flex;
-
-  @media screen and (max-width: 992px) {
-    flex-direction:column;
-  }
-`;
 export const LeftContainer = styled.div`
   display:flex;
   flex:0.7;

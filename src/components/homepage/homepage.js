@@ -1,4 +1,5 @@
-import { LeftContainer, MainContainer, RightContainer } from './homepage.elements'
+import { GlobalMainContainer } from '../globalStyledComp/globalComps.elements'
+import { LeftContainer, RightContainer } from './homepage.elements'
 import { Container_1, Container_2, Container_3, SubContainer_1, SubContainer_2, SubContainer_3 } from './rightContainerItems.elements'
 import './svg.css'
 import React, { Component } from 'react'
@@ -7,7 +8,7 @@ export default class Homepage extends Component {
 
     render() {
         return (
-            <MainContainer>
+            <GlobalMainContainer>
                 <LeftContainer >
                     <svg viewBox="0 0 1204.56 1183.72" id="svg">
                         <defs>
@@ -107,7 +108,7 @@ export default class Homepage extends Component {
                         </SubContainer_3>
                     </Container_3>
                 </RightContainer>
-            </MainContainer >
+            </GlobalMainContainer>
         )
     }
 }
