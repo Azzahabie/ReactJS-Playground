@@ -1,10 +1,7 @@
 import { LeftContainer, MainContainer, RightContainer } from './homepage.elements'
-import { Container_1, Container_2, Container_3, SubContainer_1, SubContainer_2, SubContainer_3, NavLink } from './rightContainerItems.elements'
+import { Container_1, Container_2, Container_3, SubContainer_1, SubContainer_2, SubContainer_3 } from './rightContainerItems.elements'
 import './svg.css'
 import React, { Component } from 'react'
-import { Route, Routes, Link } from 'react-router-dom'
-import { AboutMe } from '../../components'
-
 
 export default class Homepage extends Component {
 
@@ -95,20 +92,19 @@ export default class Homepage extends Component {
                 </LeftContainer>
                 <RightContainer>
                     <Container_1>
-                        <SubContainer_1>
-                            <NavLink to="/about">About U</NavLink>
+                        <SubContainer_1 to="/about">
+                            <p>About Me</p>
                         </SubContainer_1>
                     </Container_1>
                     <Container_2>
-                        <SubContainer_2>
-                        <NavLink to="/myWork">My Work</NavLink>
+                        <SubContainer_2 to="/myWork">
+                        <p>My Work</p>
                         </SubContainer_2>
                     </Container_2>
                     <Container_3>
-                        <SubContainer_3>
-                        <NavLink to="/findMe">Find Me</NavLink>
+                        <SubContainer_3 to="/findMe">
+                        <p>Find Me</p>
                         </SubContainer_3>
-
                     </Container_3>
                 </RightContainer>
             </MainContainer >

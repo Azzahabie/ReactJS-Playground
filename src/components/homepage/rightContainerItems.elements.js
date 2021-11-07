@@ -33,7 +33,7 @@ export const Container_3 = styled(Container_1)`
     animation-fill-mode:forwards;
 `;
 
-export const SubContainer_1 = styled.div`
+export const SubContainer_1 = styled(Link)`
     width:100%;
     background:grey;
     height:100%;
@@ -41,26 +41,23 @@ export const SubContainer_1 = styled.div`
     display:flex;
     align-items:center;
     justify-content:center;
+    color: black;
+    text-decoration: none;
+    &:hover {
+      color: black;
+    }
+    &:active{
+      color: black;
+    }
+    &:visited{
+      color: black;
+    }
     
     @media screen and (max-width: 992px) {
     width:80%;
     height:50%;
   }
 `;
-
-export const NavLink = styled(Link)`
-      color: black;
-      text-decoration: none;
-      &:hover {
-        color: black;
-      }
-      &:active{
-        color: black;
-      }
-      &:visited{
-        color: black;
-      }
-`
 
 export const SubContainer_2 = styled(SubContainer_1)``;
 
