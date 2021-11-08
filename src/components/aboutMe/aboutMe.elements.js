@@ -2,16 +2,11 @@
 import styled, { keyframes } from "styled-components";
 import { GlobalMainContainer } from '../globalStyledComp/globalComps.elements'
 
-const moveDivAnimation = keyframes`
-   0%{flex:0.9}
-   1%{flex:0.9}
+const fadeInChat= keyframes`  
+  0%{opacity:0}
+  100%{opacity:1}
 `;
-const moveSmallDivAnimation = keyframes`
-    0%{flex:0.1}
-    25%{flex:0.1;}
-    50%{flex:0.2;}
-    100%{flex:0.3;}
-`;
+
 export const MainContainer = styled(GlobalMainContainer)`
 
   background-color: azure;
@@ -22,7 +17,7 @@ export const MainContainer = styled(GlobalMainContainer)`
 `;
 
 export const SubContainer = styled.div`
-  width:90%;
+  width:70%;
   //background-color:purple;
 `
 export const Header = styled.div`
@@ -38,10 +33,10 @@ export const ProfContainer = styled.div`
   align-items:center;
 `
 export const ProfilePic = styled.div`
-  height: 10vh; 
-  width:10vh;
+  height: 8vh; 
+  width:8vh;
   border-radius:999px;
-  background-color:green;
+  background-color:black;
   margin-right:20px
 `;
 
@@ -51,9 +46,8 @@ export const Username = styled.h2`
 `;
 
 export const ChatContainer = styled.div`
-  width:60%;
+  width:80%;
   height:auto;
-  //background-color:grey;
   padding:10px;
   margin-bottom:10px;
   @media screen and (max-width: 576px) {
@@ -68,12 +62,14 @@ export const ChatBox = styled.div`
   padding-bottom:10px;
   padding-left: 20px;
   padding-right:20px;
-  background-color:green;
+  background-color:lightgray;
   display:flex;
   justify-content:center;
   align-items:center;
   flex-wrap:wrap;
   font-size:20px;
+  animation:${fadeInChat} 1s;
+  animation-fill-mode:forwards;
   @media screen and (max-width: 576px) {
     font-size:16px;
   }
@@ -84,6 +80,7 @@ export const SenderChatContainer = styled(ChatContainer)`
   display:flex;
   justify-content:flex-end;
 `;
+
 export const SenderChatBox = styled(ChatBox)`
 `;
 
