@@ -1,14 +1,14 @@
 //eslint-disable-next-line
 import styled, { keyframes } from "styled-components";
 import { GlobalMainContainer } from '../globalStyledComp/globalComps.elements'
+import { Link } from "react-router-dom"
 
-const fadeInChat= keyframes`  
+const fadeInChat = keyframes`  
   0%{opacity:0}
   100%{opacity:1}
 `;
 
 export const MainContainer = styled(GlobalMainContainer)`
-
   background-color: azure;
   justify-content:center;
   @media screen and (max-width: 992px) {
@@ -18,6 +18,9 @@ export const MainContainer = styled(GlobalMainContainer)`
 
 export const SubContainer = styled.div`
   width:70%;
+  @media screen and (max-width: 576px) {
+    width:90%
+  }
   //background-color:purple;
 `
 export const Header = styled.div`
@@ -42,7 +45,6 @@ export const ProfilePic = styled.div`
 
 export const Username = styled.h2`
   color:black;
-  
 `;
 
 export const ChatContainer = styled.div`
@@ -62,7 +64,7 @@ export const ChatBox = styled.div`
   padding-bottom:10px;
   padding-left: 20px;
   padding-right:20px;
-  background-color:lightgray;
+  background-color: ${props => props.backgroundColor || "grey"};
   display:flex;
   justify-content:center;
   align-items:center;
@@ -105,4 +107,27 @@ export const WhoAmIText = styled.h2`
   animation:${fadeIn} 3.5s linear;
   animation-fill-mode: forwards;
 
-`
+`;
+export const NavChatContainer = styled(Link)`
+    width:100%;
+    height:100%;
+    color: black;
+    text-decoration: none;
+    &:hover {
+      color: black;
+    }
+    &:active{
+      color: black;
+    }
+    &:visited{
+      color: black;
+    }
+`;
+export const SenderNavChatContainer = styled(Link)`
+  width:100%;
+  display:flex;
+  justify-content:flex-end;
+  @media screen and (max-width: 576px) {
+    width:80%;
+  }
+`;
