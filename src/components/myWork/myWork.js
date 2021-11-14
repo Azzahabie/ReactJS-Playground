@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { GridContainer, Grids, MainContainer, SubContainer } from './myWork.elements'
+import { GridContainer, Grids, MainContainer, Portfolio, PosterHeader, RealSale, RiderPalHeader, SpGamesHeader, SubContainer } from './myWork.elements'
 
 export default class MyWork extends Component {
     constructor(){
@@ -11,13 +11,16 @@ export default class MyWork extends Component {
     }
     render() {
         return (
-            <MainContainer> 
+            <MainContainer>
                 <SubContainer>
+                <h2>My Work</h2>
                     <GridContainer>
-                        <Grids><h2>hi</h2></Grids>
-                        <Grids><h2>hi</h2></Grids>
-                        <Grids><h2>hi</h2></Grids>
-                        <Grids><h2>hi</h2></Grids>
+                        <RealSale></RealSale>
+                        <Portfolio></Portfolio>
+                        <PosterHeader></PosterHeader>
+                        <SpGamesHeader></SpGamesHeader>
+                        <RiderPalHeader></RiderPalHeader>
+                        <Grids></Grids>
                     </GridContainer>
                 </SubContainer>
             </MainContainer>
