@@ -17,6 +17,8 @@ export default class AboutMe extends Component {
         }
     }
     componentDidMount() {
+        document.body.style.margin = 0
+        document.body.style.padding = 0
         setTimeout(() => {
             this.setState({ animationRemoved: true })
             this.setState({ startAnim: true })

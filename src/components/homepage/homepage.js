@@ -5,7 +5,13 @@ import './svg.css'
 import React, { Component } from 'react'
 
 export default class Homepage extends Component {
-
+    constructor(){
+        super()
+    }
+    componentDidMount(){
+        document.body.style.margin = 0
+        document.body.style.padding = 0
+    }
     render() {
         return (
             <GlobalMainContainer>
