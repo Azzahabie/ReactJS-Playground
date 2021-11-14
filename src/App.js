@@ -18,7 +18,7 @@ export default class App extends Component {
   constructor() {
     super()
     this.state = {
-      readNotification: true
+      readNotification: false
     }
   }
   componentDidMount() {
