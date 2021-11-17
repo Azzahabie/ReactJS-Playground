@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { GridContainer, Grids, MainContainer, Portfolio, PosterHeader, RealSale, RiderPalHeader, SpGamesHeader, SubContainer } from './myWork.elements'
+import { CvsHeader, GridContainer, Grids, KcollectHeader, MainContainer, Portfolio, PosterHeader, RealSale, RiderPalHeader, SpGamesHeader, SubContainer } from './myWork.elements'
 
 export default class MyWork extends Component {
     constructor(){
@@ -20,7 +20,8 @@ export default class MyWork extends Component {
                         <PosterHeader></PosterHeader>
                         <SpGamesHeader></SpGamesHeader>
                         <RiderPalHeader></RiderPalHeader>
-                        <Grids></Grids>
+                        <CvsHeader></CvsHeader>
+                        <KcollectHeader></KcollectHeader>
                     </GridContainer>
                 </SubContainer>
             </MainContainer>
