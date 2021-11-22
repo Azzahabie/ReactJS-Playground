@@ -1,13 +1,15 @@
 //eslint-disable-next-line
 import styled, { keyframes } from "styled-components";
 import { GlobalMainContainer } from '../globalStyledComp/globalComps.elements'
-import realSaleHeader from './RealSaleHeader.png';
-import portfolioHeader from './portfolioHeader.png';
-import posterHeader from './posterHeader.jpg'
-import spGamesHeader from './spgamesHeader.gif'
-import riderPalHeader from './riderPalHeader.png'
-import cvsHeader from './cvsHeader.png'
-import kcollectHeader from './kcollectHeader.gif'
+import realSaleHeader from './header/RealSaleHeader.png';
+import portfolioHeader from './header/portfolioHeader.png';
+import posterHeader from './header/posterHeader.jpg'
+import spGamesHeader from './header/spgamesHeader.gif'
+import riderPalHeader from './header/riderPalHeader.png'
+import cvsHeader from './header/cvsHeader.png'
+import kcollectHeader from './header/kcollectHeader.gif'
+import { Link } from "react-router-dom";
+
 
 export const MainContainer = styled(GlobalMainContainer)`
   justify-content:center;
@@ -50,6 +52,9 @@ export const Grids = styled.div`
 
   }
 `
+export const MyWorkHeader = styled.h2`
+  text-align:center;
+`
 export const RealSale = styled(Grids)`
   background-image: url(${realSaleHeader});
 `
@@ -67,6 +72,7 @@ export const SpGamesHeader = styled(Grids)`
 export const RiderPalHeader = styled(Grids)`
   background-image: url(${riderPalHeader});
 
+
 `
 export const CvsHeader = styled(Grids)`
   background-image: url(${cvsHeader});
@@ -77,3 +83,7 @@ export const KcollectHeader = styled(Grids)`
   background-size:contain;
 
 `
+export const MyLinks = styled(Link)`
+    width:100%;
+    height:100%;
+`;

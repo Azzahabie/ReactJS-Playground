@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { CvsHeader, GridContainer, Grids, KcollectHeader, MainContainer, Portfolio, PosterHeader, RealSale, RiderPalHeader, SpGamesHeader, SubContainer } from './myWork.elements'
+import { CvsHeader, GridContainer, MyWorkHeader,MyLinks, KcollectHeader, MainContainer, Portfolio, PosterHeader, RealSale, RiderPalHeader, SpGamesHeader, SubContainer } from './myWork.elements'
 
 export default class MyWork extends Component {
     constructor(){
@@ -13,13 +13,19 @@ export default class MyWork extends Component {
         return (
             <MainContainer>
                 <SubContainer>
-                <h2>My Work</h2>
+                <MyWorkHeader>My Projects</MyWorkHeader>
                     <GridContainer>
-                        <RealSale></RealSale>
-                        <Portfolio></Portfolio>
+                        <MyLinks to="/eachWork?item=realsale">
+                            <RealSale></RealSale>
+                        </MyLinks>
+                        <MyLinks to="/eachWork?item=portforlio">
+                            <Portfolio></Portfolio>
+                        </MyLinks>
                         <PosterHeader></PosterHeader>
                         <SpGamesHeader></SpGamesHeader>
-                        <RiderPalHeader></RiderPalHeader>
+                        <MyLinks to="/eachWork?item=riderpal">
+                            <RiderPalHeader></RiderPalHeader>
+                        </MyLinks>
                         <CvsHeader></CvsHeader>
                         <KcollectHeader></KcollectHeader>
                     </GridContainer>
