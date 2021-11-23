@@ -21,13 +21,22 @@ export default class MyWork extends Component {
                         <MyLinks to="/eachWork?item=portforlio">
                             <Portfolio></Portfolio>
                         </MyLinks>
-                        <PosterHeader></PosterHeader>
-                        <SpGamesHeader></SpGamesHeader>
+                        <MyLinks to="/eachWork?item=antismoke">
+                            <PosterHeader></PosterHeader>
+                        </MyLinks>
+                        <MyLinks to="/eachWork?item=spgames">
+                            <SpGamesHeader></SpGamesHeader>
+                        </MyLinks>
                         <MyLinks to="/eachWork?item=riderpal">
                             <RiderPalHeader></RiderPalHeader>
                         </MyLinks>
-                        <CvsHeader></CvsHeader>
-                        <KcollectHeader></KcollectHeader>
+                        <MyLinks to="/eachWork?item=cvs">
+                            <CvsHeader></CvsHeader>
+                        </MyLinks>
+                        <MyLinks to="/eachWork?item=kcollect">
+                            <KcollectHeader></KcollectHeader>
+                        </MyLinks>
+                        
                     </GridContainer>
                 </SubContainer>
             </MainContainer>

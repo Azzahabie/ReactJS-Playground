@@ -6,7 +6,7 @@ import portfolioHeader from './header/portfolioHeader.png';
 import posterHeader from './header/posterHeader.jpg'
 import spGamesHeader from './header/spgamesHeader.gif'
 import riderPalHeader from './header/riderPalHeader.png'
-import cvsHeader from './header/cvsHeader.png'
+import cvsHeader from './header/cvsHeader.gif'
 import kcollectHeader from './header/kcollectHeader.gif'
 import { Link } from "react-router-dom";
 

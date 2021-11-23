@@ -40,7 +40,10 @@ export const MyFooter = styled.div`
   width:100%;
   height:300px;
   margin-top:50px
-`
+`;
 export const MyTitle = styled.h2`
   margin:40px;
+`;
+export const CarouselDiv = styled.div`
+  background-color:black
 `
